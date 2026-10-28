@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "eladovadev-evalplat_jd020"
+version = "0.1.0"
+description = "对内容做归一化与分片比对，找出模型评测平台工程师·偏好数据的成对噪声上的重复项并按相似度归并"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [{ name = "eladovadev" }]
+keywords = ["ai", "llm", "cli", "analysis"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Utilities",
+]
+
+[project.urls]
+Homepage = "https://eladovadev.github.io"
+Repository = "https://github.com/eladovadev/evalplat_jd020"
+Issues = "https://github.com/eladovadev/evalplat_jd020/issues"
+
+[project.scripts]
+evalplat_jd020 = "evalplat_jd020:main"
+
+[tool.setuptools]
+py-modules = ["evalplat_jd020"]
